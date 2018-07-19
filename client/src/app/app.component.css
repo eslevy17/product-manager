@@ -1,0 +1,18 @@
+* {
+    font-family: tahoma;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    display: inline;
+    background-color: #00c2ff;
+    padding: 16px;
+    color: white;
+}
+
+li:hover {
+    opacity: 0.7;
+}

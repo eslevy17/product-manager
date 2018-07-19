@@ -1,0 +1,26 @@
+<h2>Update Product:</h2>
+
+<div *ngIf="errorCheck">
+    <p style="color:red" *ngFor="let error of errors">{{error}}</p>
+</div>
+
+<form (submit)="updateProduct()">
+    <table>
+        <tr>
+            <td>Title: </td>
+            <td><input type="text" name="thisProduct.title" [(ngModel)]="thisProduct.title" /></td>
+        </tr>
+        <tr>
+            <td>Price: </td>
+            <td><input type="text" name="thisProduct.price" [(ngModel)]="thisProduct.price" /></td>
+        </tr>
+        <tr>
+            <td>Photo URL: </td>
+            <td><input type="text" name="thisProduct.url" [(ngModel)]="thisProduct.url" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update" /></td>
+        </tr>
+    </table>
+</form>
